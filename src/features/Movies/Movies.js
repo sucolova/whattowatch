@@ -6,16 +6,14 @@ export function Movies() {
     const movies = useSelector(selectMovies);
     let moviesToRender = movies.results && movies.results.map(movie => {
         return (
-            <Movie title={movie.title} image={movie.image} plot={movie.plot} stars={movie.stars} />
+            <Movie title={movie.title} image={movie.image} plot={movie.plot} stars={movie.stars} id={movie.id} />
         ) 
     })
 
     return (
 
-        <div>
-            <h1>searchresults</h1>
+        <div className="movieList">
             {moviesToRender}
-
         </div>
 
     )

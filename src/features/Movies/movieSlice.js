@@ -12,7 +12,7 @@ export const getTrailer = createAsyncThunk(
 export const movieSlice = createSlice({
     name: 'movie',
     initialState: {
-        trailer: '',
+        trailer: [],
         status: 'nothing'
     },
     extraReducers: (builder) => {
@@ -31,3 +31,4 @@ export const movieSlice = createSlice({
 })
 
 export default movieSlice.reducer;
+export const selectTrailer = (state) => state.movie.trailer; 

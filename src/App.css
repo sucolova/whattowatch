@@ -1,39 +1,90 @@
-.App {
-  text-align: center;
+:root {
+    font-size: 16px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+form {
+    padding-top: 2rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-float infinite 3s ease-in-out;
-  }
+.title {
+    text-align: center;
 }
 
-.App-header {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.title label {
+    font-weight: bold;
+    font-size: 1.8rem;
 }
 
-.App-link {
-  color: rgb(112, 76, 182);
+.title input: {
+    font-size: 2rem;
 }
 
-@keyframes App-logo-float {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
+label {
+    font-size: 1.3rem;
+    margin-right: 1rem;
 }
+
+fieldset {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+legend {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+fieldset div {
+    padding: 0.5rem;
+    background-color: gray;
+    border-radius: 20px;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+}
+
+button {
+    width: 100px;
+}
+
+.submitButton {
+    width: 100px;
+    margin-top: 2rem;
+    margin-left: 1rem;
+}
+
+
+/*movieList*/
+
+.movieList {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.movie {
+    margin: 2rem;
+    width: 20rem;
+    border-radius: 20px;
+    padding: 1rem;
+    background-color: gray;
+}
+
+.trailer {
+    width: 850px;
+    height: 450px;
+    border-radius: 20px;
+    padding: 1rem;
+    background-color: gray;
+}
+
+.trailer iframe {
+    width: 850px;
+    height: 400px;
+}
+
+.trailer button {
+    display: block;
+}
+
