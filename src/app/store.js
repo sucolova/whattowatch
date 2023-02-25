@@ -1,8 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import formReducer from '../features/form/formSlize.js';
+import movieReducer from '../features/Movies/movieSlice.js';
 
 export const store = configureStore({
-  reducer: {
-    counter: counterReducer,
-  },
+    reducer: {
+        form: formReducer,
+        movie: movieReducer
+    },
 });
