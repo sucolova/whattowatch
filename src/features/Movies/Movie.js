@@ -26,7 +26,7 @@ export function Movie(props) {
         return (
             <div className='movie'>
                 <h3>{props.title}</h3>
-                <img src={props.image} alt='cover' width='140px' />
+                <img src={props.image} alt='cover' />
                 <p>{props.plot}</p>
                 <p>{props.stars}</p>
                 <button onClick={handleClick}>Trailer</button>

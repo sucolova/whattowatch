@@ -1,5 +1,12 @@
 :root {
     font-size: 16px;
+    background-color: var(--background);
+    color: var(--primary);
+
+    --background: #F2F4F8;
+    --lighterBackground: #FFFFFF;
+    --primary: #2F3440;
+    --highlight: #81A1C1;
 }
 
 form {
@@ -36,17 +43,21 @@ legend {
 
 fieldset div {
     padding: 0.5rem;
-    background-color: gray;
+    background-color: var(--lighterBackground);
     border-radius: 20px;
     margin-right: 2rem;
     margin-bottom: 1rem;
 }
 
 button {
+    background-color: var(--highlight);
+    border-radius: 20px;
     width: 100px;
 }
 
 .submitButton {
+    background-color: var(--highlight);
+    border-radius: 20px;
     width: 100px;
     margin-top: 2rem;
     margin-left: 1rem;
@@ -68,7 +79,16 @@ button {
     width: 20rem;
     border-radius: 20px;
     padding: 1rem;
-    background-color: gray;
+    padding-bottom: 2rem;
+    background-color: var(--lighterBackground);
+    position: relative;
+}
+
+.movie img {
+    width: 18rem;
+    display: block;
+    border-radius: 20px;
+    margin: 0 auto;
 }
 
 .trailer {
@@ -76,7 +96,8 @@ button {
     height: 450px;
     border-radius: 20px;
     padding: 1rem;
-    background-color: gray;
+    background-color: var(--lighterBackground);
+    position: relative;
 }
 
 .trailer iframe {
@@ -84,7 +105,9 @@ button {
     height: 400px;
 }
 
-.trailer button {
+.trailer button, .movie button {
     display: block;
+    position: absolute;
+    bottom: 1rem;
 }
 
