@@ -15,3 +15,7 @@
 - handling fetch errors
 - loading animation
 - handling no trailer available
+- every listItem needs an id
+- nicer fonts
+
+## Done

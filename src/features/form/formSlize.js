@@ -71,6 +71,7 @@ export const selectTitle = (state) => state.form.title;
 export const selectMovies = (state) => state.form.movies;
 export const selectTitleTypes = (state) => state.form.titleTypes;
 export const selectGenres = (state) => state.form.genres;
+export const selectStatus = (state) => state.form.status;
 
 export default formSlice.reducer;
 

@@ -31,4 +31,5 @@ export const movieSlice = createSlice({
 })
 
 export default movieSlice.reducer;
-export const selectTrailer = (state) => state.movie.trailer; 
+export const selectTrailer = (state) => state.movie.trailer;
+export const selectStatus = (state) => state.movie.status;
