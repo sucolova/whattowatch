@@ -52,7 +52,7 @@ title=${title}
         <form onSubmit={submit} >
 
             <div className='title'>
-                <label htmlFor="title">title </label>
+                <label htmlFor="title">Title </label>
                 <input type="text" 
                     id="title"
                     name="title"

@@ -9,6 +9,11 @@
     --highlight: #81A1C1;
 }
 
+.heading {
+    text-align: center;
+    font-size: 3rem;
+}
+
 form {
     padding-top: 2rem;
 }
