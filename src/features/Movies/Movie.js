@@ -27,7 +27,7 @@ export function Movie(props) {
             } else {
                 return (
                     <div className='trailer'>
-                        <h1>there is no trailer available</h1>
+                        <h1 className='message'>there is no trailer available</h1>
                     </div>
                 )
             }
@@ -40,7 +40,7 @@ export function Movie(props) {
         } else if (status === 'rejected') {
             return (
                 <div className='trailer'>
-                    <h1>something went wrong, please try again later</h1>
+                    <h1 className='message'>something went wrong, please try again later</h1>
                 </div>
             )
 

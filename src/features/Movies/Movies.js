@@ -7,7 +7,7 @@ export function Movies() {
     const status = useSelector(selectStatus);
     let moviesToRender = movies.results && movies.results.map(movie => {
         return (
-            <Movie title={movie.title} image={movie.image} plot={movie.plot} stars={movie.stars} id={movie.id} />
+            <Movie title={movie.title} image={movie.image} plot={movie.plot} stars={movie.stars} id={movie.id} key={movie.id} />
         ) 
     })
 
@@ -40,7 +40,7 @@ export function Movies() {
         )
     } else if (status === 'idle' && moviesToRender.length === 0) {
         return (
-        <h1>no movies found for given input, please try again with diffrent search values</h1>
+        <h1 className="message">no movies found for given input, please try again with diffrent search values</h1>
         )
     }
 

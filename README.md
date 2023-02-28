@@ -1,6 +1,6 @@
 # whatToWatch 
 
-## SPA to find something to watch.
+## SPA that helps you find something to watch.
 
 ### how it works:
 
@@ -12,7 +12,6 @@
 
 ## TODO
 
-- every listItem needs an id
 - nicer fonts
 - design for mobile and all screen sizes
     - too small screens: trailer width too wide
@@ -24,4 +23,4 @@
 - handling no trailer available
 - handling fetch states
 - loading animation
-
+- every listItem needs an id

@@ -12,6 +12,7 @@
 .heading {
     text-align: center;
     font-size: 3rem;
+    font-weight: bold;
 }
 
 form {
@@ -66,6 +67,8 @@ button {
     width: 100px;
     margin-top: 2rem;
     margin-left: 1rem;
+    font-weight: bold;
+    font-size: 1rem;
 }
 
 
@@ -144,4 +147,22 @@ button {
     margin: 0;
     padding: 0;
     height: 100%;
+}
+
+.message {
+    text-align: center;
+}
+
+/*screen sizes*/
+
+@media screen and (max-width: 850px) {
+    .trailer iframe {
+        width: 640px;
+        height: 400px;
+    }
+
+    .video-player-embedded, .video-player-frame {
+        width: 640px !important;
+    }
+  
 }
