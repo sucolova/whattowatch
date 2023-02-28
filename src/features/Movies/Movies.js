@@ -11,6 +11,7 @@ export function Movies() {
         ) 
     })
 
+
     if(status === 'rejected') {
         return (
             <h1>rejected</h1>
@@ -31,6 +32,11 @@ export function Movies() {
                 </div>
             </div>
         )
+    } else if (status === 'idle' && movies.results === null) {
+        return (
+        <h1 className="message">maximum requests reached</h1>
+        ) 
+
     } else if (status === 'idle' && moviesToRender.length > 0) {
         console.log(moviesToRender.length);
         return (
