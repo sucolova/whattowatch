@@ -12,10 +12,16 @@
 
 ## TODO
 
-- handling fetch errors
-- loading animation
-- handling no trailer available
 - every listItem needs an id
 - nicer fonts
+- design for mobile and all screen sizes
+    - too small screens: trailer width too wide
+    - buttons too small
+
 
 ## Done
+
+- handling no trailer available
+- handling fetch states
+- loading animation
+

@@ -17,13 +17,30 @@ export function Movies() {
         )
     } else if (status === 'pending') {
         return(
-            <h1>pending</h1>
+            <div className="pendingList">
+                <h1>Searching for Movies ....</h1>
+                <div>
+                    <div className="pending"></div>
+                    <div className="pending"></div>
+                    <div className="pending"></div>
+                    <div className="pending"></div>
+                    <div className="pending"></div>
+                    <div className="pending"></div>
+                    <div className="pending"></div>
+                    <div className="pending"></div>
+                </div>
+            </div>
         )
-    } else if (status === 'idle') {
+    } else if (status === 'idle' && moviesToRender.length > 0) {
+        console.log(moviesToRender.length);
         return (
             <div className="movieList">
                 {moviesToRender}
             </div>
+        )
+    } else if (status === 'idle' && moviesToRender.length === 0) {
+        return (
+        <h1>no movies found for given input, please try again with diffrent search values</h1>
         )
     }
 

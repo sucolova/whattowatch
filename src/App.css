@@ -71,7 +71,7 @@ button {
 
 /*movieList*/
 
-.movieList {
+.movieList, .pendingList div {
     margin-top: 3rem;
     display: flex;
     flex-direction: row;
@@ -79,7 +79,7 @@ button {
     justify-content: space-around;
 }
 
-.movie {
+.movie, .pending {
     margin: 2rem;
     width: 20rem;
     border-radius: 20px;
@@ -116,3 +116,32 @@ button {
     bottom: 1rem;
 }
 
+/*pending / searching for movies / fetching trailer*/
+
+@keyframes placeHolderShimmer {
+0% {
+    background-position: -900px 0
+}
+100% {
+    background-position: 900px 0
+}
+}
+
+.pending {
+    height: 30vh;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: placeHolderShimmer;
+    animation-timing-function: linear;
+    background-color: var(--lighterBackground);
+    background: linear-gradient(to right, #eeeeee 8%, #bbbbbb 18%, #eeeeee 33%);
+    background-size: 900px;
+}
+
+.trailer .pending {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
