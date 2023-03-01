@@ -16,6 +16,7 @@
 - design for mobile and all screen sizes
     - too small screens: trailer width too wide
     - buttons too small
+    - trailer not in the middle of screen, you have to scroll sometimes to find the trailer
 
 
 ## Done

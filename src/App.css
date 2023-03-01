@@ -17,6 +17,7 @@
 
 form {
     padding-top: 2rem;
+    margin-bottom: 3rem;
 }
 
 .title {
@@ -75,7 +76,6 @@ button {
 /*movieList*/
 
 .movieList, .pendingList div {
-    margin-top: 3rem;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -121,6 +121,10 @@ button {
     width: 100px;
 }
 
+.movie h3 {
+    text-align: center;
+}
+
 /*pending / searching for movies / fetching trailer*/
 
 @keyframes placeHolderShimmer {
@@ -157,14 +161,21 @@ button {
 
 /*screen sizes*/
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 900px) {
     .trailer iframe {
-        width: 640px;
-        height: 400px;
+        width: 100vw;
     }
 
-    .video-player-embedded, .video-player-frame {
-        width: 640px !important;
+    .trailer {
+        width: 100vw;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .movie {
+        width: 100vw;
+        margin: 0;
+        margin-bottom: 2rem;
     }
   
 }

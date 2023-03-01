@@ -19,7 +19,7 @@ export function Movie(props) {
             if(trailer.linkEmbed) {
                 return (
                     <div className='trailer'>
-                        <iframe src={trailer.linkEmbed} scrolling='no' allowFullScreen='true' ></iframe>
+                        <iframe src={trailer.linkEmbed} allowFullScreen='true' title='imdbTrailer' ></iframe>
                         <button onClick={() => setClicked(false)}>back</button>
                     </div>
                 )
